@@ -3,4 +3,5 @@ numpy
 scikit-learn
 tensorflow
 matplotlib
-pandas 
+pandas
+seaborn
