@@ -1,0 +1,8 @@
+# Python environments and generated files
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Streamlit runtime files
+.streamlit/secrets.toml

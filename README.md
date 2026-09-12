@@ -48,6 +48,18 @@ Emotion Recognition from Speech/
 
 ## Usage
 
+### Web interface
+
+Start the friendly upload interface with:
+
+```bash
+streamlit run app.py
+```
+
+Open the local address shown in the terminal, upload a WAV file, then select
+**Analyze emotion**. The interface plays the upload, displays the predicted
+emotion and confidence, and shows the confidence for every class.
+
 ### Training the Model
 Run the following command to train the model:
 ```bash
@@ -60,7 +72,7 @@ To predict the emotion of a new audio file:
 ```bash
 python src/predict.py <path_to_audio_file>
 ```
-The script will output the predicted emotion.
+The script will output the predicted emotion and its confidence.
 
 ## Feature Extraction
 Feature extraction from audio is handled in `src/features.py`. You can modify this file to experiment with different audio features (e.g., MFCCs, chroma, mel spectrogram).
@@ -71,4 +83,3 @@ The model is defined in `src/model.py`. It is a convolutional neural network (CN
 ## Requirements
 See `requirements.txt` for the list of required Python packages (e.g., numpy, librosa, tensorflow, keras).
 
- 
